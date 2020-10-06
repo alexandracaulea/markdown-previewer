@@ -1,26 +1,46 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import Editor from './components/Editor';
+import Preview from './components/Preview';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const placeholderText = `
+# Markdown Preview
+
+## Type something
+
+Type on the **left**, and see it rendered on the **right**
+
+This is a [link](https://github.com/alexandracaulea/markdown-previewer) to the repository.
+`;
+
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      textareaValue: placeholderText,
+    };
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(e) {
+    this.setState({
+      textareaValue: e.target.value,
+    });
+  }
+
+  render() {
+    const { textareaValue } = this.state;
+    return (
+      <div className="App">
+        <h1>Markdown Previewer</h1>
+        <Editor
+          textareaValue={textareaValue}
+          handleChange={this.handleChange}
+        />
+        <Preview textareaValue={textareaValue} />
+      </div>
+    );
+  }
 }
 
 export default App;
