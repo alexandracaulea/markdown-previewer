@@ -1,11 +1,11 @@
 import React from 'react';
 
-export default function Editor({ textareaValue, handleChange }) {
+export function Editor({ textareaValue, setTextareaValue }) {
   return (
     <textarea
       id="editor"
       value={textareaValue}
-      onChange={handleChange}
+      onChange={(e) => setTextareaValue(e.target.value)}
       rows={20}
       cols={100}
     />
