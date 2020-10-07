@@ -26,7 +26,8 @@ In order to test the requirements I've use [this](https://cdn.freecodecamp.org/t
 
 1. Clone the repository: `https://github.com/alexandracaulea/markdown-previewer`.
 2. Go to the project: `cd markdown-previewer`.
-3. Install project dependencies by running: `yarn add`.
+3. Install project dependencies by running: `yarn install`.
+4. To run the project: `yarn start`.
 
 ### Using this repository
 
