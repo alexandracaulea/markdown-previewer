@@ -1,13 +1,15 @@
 import React from 'react';
+import './Editor.css';
 
-export function Editor({ textareaValue, setTextareaValue }) {
+export default function Editor({ textareaValue, setTextareaValue }) {
   return (
     <textarea
       id="editor"
+      autoFocus
+      spellCheck="false"
+      className="Editor"
       value={textareaValue}
       onChange={(e) => setTextareaValue(e.target.value)}
-      rows={20}
-      cols={100}
     />
   );
 }

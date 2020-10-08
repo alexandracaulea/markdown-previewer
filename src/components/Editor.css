@@ -1,0 +1,12 @@
+.Editor {
+  background-color: #282c30;
+  color: #fff;
+  resize: none;
+  font-size: 1rem;
+  font-family: inherit;
+  border: 1px solid #1e2124;
+}
+
+.Editor {
+  padding: 1rem;
+}
