@@ -1,12 +1,9 @@
 .Editor {
-  background-color: #282c30;
-  color: #fff;
+  color: #282c30;
   resize: none;
   font-size: 1rem;
   font-family: inherit;
-  border: 1px solid #1e2124;
-}
-
-.Editor {
+  border: 1px solid #cdc9c3;
   padding: 1rem;
+  margin-left: 1rem;
 }

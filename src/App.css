@@ -4,9 +4,3 @@
   grid-auto-rows: 1fr 1fr;
   min-height: 100vh;
 }
-
-.App-heading {
-  font-size: 3.052em;
-  margin-left: 1rem;
-  font-weight: normal;
-}

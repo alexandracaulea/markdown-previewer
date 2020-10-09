@@ -11,7 +11,7 @@
 .Preview h4,
 .Preview h5,
 .Preview h6 {
-  color: #7a6a99;
+  /* color: #7a6a99; */
   line-height: 1;
 }
 
@@ -48,6 +48,25 @@ p {
   color: #7d45b0;
 }
 
-.Preview strong {
+#headers,
+#emphasis,
+#lists,
+#blockquotes,
+#images,
+#images-and-links {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #4ec04e;
+  font-weight: normal;
+}
+
+.Preview p:first-of-type {
+  margin-top: 0;
+}
+
+.Preview p:first-of-type strong {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2rem;
   color: #a4627b;
 }
