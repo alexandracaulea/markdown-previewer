@@ -48,12 +48,21 @@ p {
   color: #7d45b0;
 }
 
-#headers,
+#headings,
+#paragraphs,
+#line-breaks,
 #emphasis,
-#lists,
 #blockquotes,
+#lists,
+#unordered-lists,
+#ordered-lists,
+#code-blocks,
+#horizontal-rules,
 #images,
-#images-and-links {
+#links,
+#urls-and-email-addresses,
+#task-lists,
+#tables {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #4ec04e;
