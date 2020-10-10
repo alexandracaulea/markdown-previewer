@@ -24,7 +24,7 @@ To create a heading, add between 1 and 6 \`#\` in front of the word or phrase. T
 
 ### Paragraphs
 
-To create a paragraph, use a black line to separate one or more lines of text.
+To create a paragraph, use a blank line to separate one or more lines of text.
 
 ### Line Breaks
 
@@ -47,7 +47,7 @@ To bold a word or a phrase, add two asterisks or underscores before and after a 
 
 __This text will also be bold.__
 
-#### Blockquotes
+### Blockquotes
 
 To create a blockquote, add a > in front of a paragraph. If you need to have a blockquote with multiple paragraphs you can add a > on the blank lines between the paragraphs.
 
