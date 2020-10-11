@@ -7,7 +7,9 @@ export default function Preview({ textareaValue }) {
     <div
       id="preview"
       className="Preview"
-      dangerouslySetInnerHTML={{ __html: marked(textareaValue) }}
+      dangerouslySetInnerHTML={{
+        __html: marked(textareaValue, { breaks: true }),
+      }}
     />
   );
 }
