@@ -8,6 +8,7 @@ export default function Preview({ textareaValue }) {
   return (
     <div
       id="preview"
+      aria-live="polite"
       className="Preview"
       dangerouslySetInnerHTML={{
         __html: marked(clean, { breaks: true }),
