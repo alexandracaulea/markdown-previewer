@@ -4,3 +4,47 @@
   grid-auto-rows: 1fr 1fr;
   min-height: 100vh;
 }
+
+.App-github-link {
+  border: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.App-github-link:hover .App-github-octo-arm {
+  animation: github-animation 0.5s ease-in-out;
+}
+
+.App-github-link:hover {
+  opacity: 0.9;
+}
+
+.App-github-link:active .App-github-octo-arm {
+  fill: #605a7d;
+}
+
+.App-github-link:focus .App-github-octo-arm {
+  fill: #585274;
+}
+
+.App-github-octo-arm {
+  transform-origin: 8em 6em;
+  fill: #f9f9f9;
+}
+
+@keyframes github-animation {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
