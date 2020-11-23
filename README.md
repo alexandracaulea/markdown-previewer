@@ -1,5 +1,7 @@
 # Markdown Previewer
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4f96a8ed-8cd8-437e-8179-0f654debd772/deploy-status)](https://app.netlify.com/sites/markdown-previewer-project/deploys)
+
 "Build a Markdown Previewer" [project](https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-markdown-previewer) is part of the Front End Libraries Projects from freeCodeCamp.
 
 ## Objective
@@ -35,4 +37,10 @@ In order to test the requirements I've use [this](https://cdn.freecodecamp.org/t
 2. To build run `yarn build`.
 3. To run tests: `yarn test`.
 4. To build: `yarn build`.
-5. To eject `yarn eject`
+5. To eject `yarn eject`.
+
+### Live Example
+
+[Live example on Netlify](https://markdown-previewer-project.netlify.app/)
+
+![](markdown-previewer.gif)
